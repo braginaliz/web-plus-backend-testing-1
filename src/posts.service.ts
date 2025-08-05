@@ -28,4 +28,9 @@ export class PostsService {
   find(postId: string) {
     return this.posts.find(({ id }) => id === postId);
   }
+
+  // Добавляем метод, чтобы получить список всех постов
+  getAll(): Post[] {
+    return this.posts;
+  }
 }
